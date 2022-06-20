@@ -117,7 +117,20 @@ git tag -d <tag_name>
 git push origin :refs/tags/<tag_name>
 ```
 
+## 合并
 
+代码合并的git merge默认是要提交的。也就是在分支1上，将分支2的代码进行合并时，会默认进行提交。如何避免这种提交呢？
+
+合并时，勾选下面两个选项进行合并。自己提交的时候，就可以自己写注释了（虽然git会提示，不影响）。
+
+<img src="../img/image-20220613144622773.png" alt="image-20220613144622773" style="zoom:70%;" />
+
+如果合并附带commit，想要放弃合并敲入下面的命令：
+
+```
+//放弃合并
+git merge --abort
+```
 
 # 错误解决
 
