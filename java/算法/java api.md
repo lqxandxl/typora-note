@@ -244,3 +244,7 @@ Iterator<Map.Entry<k,v>> it = m.entrySet().iterator() //Entry作为内部类
 ```
 
 T必须是类，不能是基本类型。
+
+//省却大量语句，如果没获取到单词就赋值0+1，如果有获取到单词就是单词value再+1
+
+dict.put(word,dict.getOrDefault(word,0)+1);
